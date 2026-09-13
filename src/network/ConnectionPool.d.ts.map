@@ -1,0 +1,1 @@
+{"version":3,"file":"ConnectionPool.d.ts","sourceRoot":"","sources":["ConnectionPool.ts"],"names":[],"mappings":"AAAA,OAAO,GAAG,MAAM,KAAK,CAAC;AAEtB,qBAAa,cAAc;IACvB,OAAO,CAAC,WAAW,CAA8B;IAE1C,GAAG,CAAC,MAAM,EAAE,GAAG,CAAC,MAAM,GAAG,IAAI,CAGnC;IAEM,SAAS,CAAC,IAAI,EAAE,MAAM,GAAG,IAAI,CAInC;CACJ"}

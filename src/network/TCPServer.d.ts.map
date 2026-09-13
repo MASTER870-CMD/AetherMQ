@@ -1,0 +1,1 @@
+{"version":3,"file":"TCPServer.d.ts","sourceRoot":"","sources":["TCPServer.ts"],"names":[],"mappings":"AAGA,qBAAa,SAAS;IAIN,OAAO,CAAC,IAAI;IAHxB,OAAO,CAAC,MAAM,CAAa;IAC3B,OAAO,CAAC,YAAY,CAAoC;IAExD,YAAoB,IAAI,EAAE,MAAM,EAE/B;IAED,OAAO,CAAC,gBAAgB;IA6BxB,OAAO,CAAC,cAAc;IAoBf,KAAK,IAAI,IAAI,CAOnB;CACJ"}
