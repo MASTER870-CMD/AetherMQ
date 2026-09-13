@@ -11,6 +11,11 @@ export class Queue {
         return this.messages.shift();
     }
 
+    public getMessagesFromOffset(offset: number): Message[] {
+        // In a real system, offset would be absolute. Here we map it to index.
+        return this.messages.slice(offset);
+    }
+
     public size(): number {
         return this.messages.length;
     }
