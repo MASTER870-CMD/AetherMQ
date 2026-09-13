@@ -1,8 +1,8 @@
-﻿const net = require('net');
+const net = require('net');
 
 const client = new net.Socket();
 client.connect(8080, '127.0.0.1', () => {
-    console.log('Connected to AetherMQ');
+    console.log('Connected to AEtherMQ');
     
     console.log('\n--- 1. Publishing messages ---');
     const pub1 = JSON.stringify({ command: 'PUBLISH', topic: 'default', payload: { event: 'user_signup', userId: 1 } });
@@ -19,7 +19,7 @@ client.connect(8080, '127.0.0.1', () => {
 });
 
 client.on('data', (data) => {
-    console.log(Server Response: );
+    console.log(`Server Response: ${data.toString().trim()}`);
 });
 
 client.on('close', () => {
