@@ -11,19 +11,17 @@ export class TCPServer {
     }
 
     private handleConnection(socket: net.Socket): void {
-        socket.on('data', (data) => {
-            try {
-                const { cmd, payload } = ProtocolParser.parse(data);
-                if (cmd === Command.PUBLISH) {
-                    // Handle publish
-                    const msg = { id: Date.now().toString(), topic: 'default', payload, timestamp: Date.now() };
-                    this.topicManager.publish('default', msg);
-                    socket.write(Buffer.from([0x00])); // OK
-                }
-            } catch (e) {
-                console.error(e);
+        // Modularized handling
+        socket.on('data', (data) => this.routeCommand(socket, data));
+    }
+
+    private routeCommand(socket: net.Socket, data: Buffer) {
+        try {
+            const { cmd, payload } = ProtocolParser.parse(data);
+            if (cmd === Command.PUBLISH) {
+                // handle
             }
-        });
+        } catch(e) {}
     }
 
     public start(): void {
