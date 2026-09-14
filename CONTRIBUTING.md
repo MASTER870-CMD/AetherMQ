@@ -6,3 +6,5 @@ By participating in this project, you are expected to uphold our Code of Conduct
 
 ## How Can I Contribute?
 ### Reporting Bugs
+Before creating bug reports, please check the existing issues as you might find out that you don't need to create one.
+
