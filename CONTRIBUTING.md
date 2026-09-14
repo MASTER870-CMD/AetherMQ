@@ -30,3 +30,4 @@ Before submitting your PR, ensure all tests pass by running:
 npm test
 ```
 
+## Styleguides
