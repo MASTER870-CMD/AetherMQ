@@ -25,3 +25,4 @@ npm install
 ```
 
 ## Testing
+Before submitting your PR, ensure all tests pass by running:
