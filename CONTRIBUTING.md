@@ -20,3 +20,7 @@ Unsure where to begin contributing? You can start by looking through these begin
 1. Node.js (v18+)
 2. TypeScript
 
+```bash
+npm install
+```
+
