@@ -113,3 +113,5 @@ To achieve maximum throughput, ensure your OS is tuned for high network I/O.
 Ensure the `PORT` environment variable matches your client.
 **Q: Data not persisting?**
 Check write permissions on the `data/` directory.
+
+## 🛡️ Security
