@@ -10,3 +10,4 @@ Before creating bug reports, please check the existing issues as you might find 
 
 When you are creating a bug report, please include as many details as possible.
 
+### Suggesting Enhancements
