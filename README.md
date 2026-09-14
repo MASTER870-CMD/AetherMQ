@@ -94,3 +94,6 @@ services:
 ```
 ### Kubernetes
 For high availability, deploy AetherMQ as a StatefulSet.
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
