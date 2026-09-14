@@ -92,3 +92,4 @@ services:
     volumes:
       - ./data:/app/data
 ```
+### Kubernetes
