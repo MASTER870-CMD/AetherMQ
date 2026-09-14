@@ -8,3 +8,5 @@ By participating in this project, you are expected to uphold our Code of Conduct
 ### Reporting Bugs
 Before creating bug reports, please check the existing issues as you might find out that you don't need to create one.
 
+When you are creating a bug report, please include as many details as possible.
+
