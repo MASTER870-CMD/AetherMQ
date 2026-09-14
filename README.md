@@ -87,3 +87,5 @@ version: '3.8'
 services:
   aethermq:
     build: .
+    ports:
+      - "8080:8080"
