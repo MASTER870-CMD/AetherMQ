@@ -82,3 +82,7 @@ docker build -t aethermq .
 docker run -d -p 8080:8080 -v ./data:/app/data aethermq
 ```
 ### Docker Compose
+```yaml
+version: '3.8'
+services:
+  aethermq:
