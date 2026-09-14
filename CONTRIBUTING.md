@@ -11,3 +11,5 @@ Before creating bug reports, please check the existing issues as you might find 
 When you are creating a bug report, please include as many details as possible.
 
 ### Suggesting Enhancements
+Enhancement suggestions are tracked as GitHub issues. Provide a clear and descriptive title.
+
