@@ -73,3 +73,5 @@ Contributions are always welcome! Feel free to open an issue or submit a Pull Re
 5. Open a Pull Request
 
 ## 🌍 Deployment & Production
+AetherMQ can be easily containerized.
+### Docker
