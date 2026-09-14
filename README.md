@@ -101,3 +101,4 @@ metadata:
   name: aethermq
 spec:
   replicas: 3
+```
