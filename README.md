@@ -41,14 +41,19 @@ AetherMQ can be customized via environment variables:
 | `DATA_DIR` | Directory for persistence files | `./data` |
 | `MAX_CLIENTS` | Max concurrent TCP connections | `10000` |
 
-## 🚀 How to Test it Locally
-1. **Start the server:**
+## 🚀 Local Setup & Testing
+1. **Clone & Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Start the Broker:**
    ```bash
    npm run build
    npm start
    ```
 
-2. **Run the Test Client:**
+3. **Run the Interactive Test Client:**
    ```bash
    node scripts/test_client.js
    ```
