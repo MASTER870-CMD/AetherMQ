@@ -102,3 +102,5 @@ metadata:
 spec:
   replicas: 3
 ```
+
+## ⚡ Performance Tuning
