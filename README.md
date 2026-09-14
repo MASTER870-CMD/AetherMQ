@@ -19,6 +19,10 @@ To provide extreme throughput without sacrificing reliability, AetherMQ implemen
 - **Batching & Flushing**: To avoid I/O bottlenecks, operations are buffered in memory and asynchronously flushed to disk every `100ms`.
 - **Crash Recovery**: On boot, the engine sequentially replays the WAL to reconstruct the exact state of all topics and queues up to the exact moment of failure.
 
+## 📡 Protocol Specification
+AetherMQ communicates over raw TCP using Newline-Delimited JSON (NDJSON).
+Each payload must be a valid JSON object followed by a `\n` character.
+
 ## ⚙️ Core Features
 * **100% Functional TCP Server:** Handles TCP stream buffering and parses newline-delimited JSON commands.
 * **Crash-Fault Tolerance:** Uses a Write-Ahead Log (`.wal`) for perfect state reconstruction.
