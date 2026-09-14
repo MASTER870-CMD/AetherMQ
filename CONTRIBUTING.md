@@ -24,3 +24,4 @@ Unsure where to begin contributing? You can start by looking through these begin
 npm install
 ```
 
+## Testing
