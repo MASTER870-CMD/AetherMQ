@@ -17,3 +17,6 @@ Enhancement suggestions are tracked as GitHub issues. Provide a clear and descri
 Unsure where to begin contributing? You can start by looking through these beginner and help-wanted issues.
 
 ## Environment Setup
+1. Node.js (v18+)
+2. TypeScript
+
