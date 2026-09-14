@@ -16,3 +16,4 @@ Enhancement suggestions are tracked as GitHub issues. Provide a clear and descri
 ### Your First Pull Request
 Unsure where to begin contributing? You can start by looking through these beginner and help-wanted issues.
 
+## Environment Setup
