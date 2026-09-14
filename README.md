@@ -23,6 +23,15 @@ To provide extreme throughput without sacrificing reliability, AetherMQ implemen
 AetherMQ communicates over raw TCP using Newline-Delimited JSON (NDJSON).
 Each payload must be a valid JSON object followed by a `\n` character.
 
+### Publish
+```json
+{"type": "PUBLISH", "topic": "events", "payload": {"user": 1, "action": "login"}}
+```
+### Subscribe
+```json
+{"type": "SUBSCRIBE", "topic": "events"}
+```
+
 ## ⚙️ Core Features
 * **100% Functional TCP Server:** Handles TCP stream buffering and parses newline-delimited JSON commands.
 * **Crash-Fault Tolerance:** Uses a Write-Ahead Log (`.wal`) for perfect state reconstruction.
