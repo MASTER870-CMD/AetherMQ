@@ -13,10 +13,16 @@ AetherMQ is designed with a modular architecture focusing on performance and rel
 - **Storage Engine (WAL)**: An append-only log that sequentially writes commands to disk to guarantee persistence.
 - **In-Memory State**: Maintains topics, consumer groups, and queue states for lightning-fast message delivery.
 
+## 💾 Storage Mechanics: The Write-Ahead Log
+To provide extreme throughput without sacrificing reliability, AetherMQ implements a custom Write-Ahead Log (WAL):
+- **Durability Guarantee**: Every mutating operation is recorded in the `.wal` file before the client receives an acknowledgement.
+- **Batching & Flushing**: To avoid I/O bottlenecks, operations are buffered in memory and asynchronously flushed to disk every `100ms`.
+- **Crash Recovery**: On boot, the engine sequentially replays the WAL to reconstruct the exact state of all topics and queues up to the exact moment of failure.
+
 ## ⚙️ Core Features
 * **100% Functional TCP Server:** Handles TCP stream buffering and parses newline-delimited JSON commands.
-* **Crash-Fault Tolerance:** Uses a Write-Ahead Log (`.wal`). If the server dies, it parses the `.wal` file on restart and perfectly reconstructs the queues.
-* **Batch-Flushing WAL:** Messages are held in an in-memory buffer and flushed to disk every 100ms to eliminate Disk I/O bottlenecks.
+* **Crash-Fault Tolerance:** Uses a Write-Ahead Log (`.wal`) for perfect state reconstruction.
+* **Batch-Flushing WAL:** Flushes every 100ms to eliminate Disk I/O bottlenecks.
 
 ## 🚀 How to Test it Locally
 1. **Start the server:**
@@ -25,7 +31,7 @@ AetherMQ is designed with a modular architecture focusing on performance and rel
    npm start
    ```
 
-2. **Run the Test Client (in a new terminal):**
+2. **Run the Test Client:**
    ```bash
    node scripts/test_client.js
    ```
