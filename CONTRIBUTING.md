@@ -14,3 +14,5 @@ When you are creating a bug report, please include as many details as possible.
 Enhancement suggestions are tracked as GitHub issues. Provide a clear and descriptive title.
 
 ### Your First Pull Request
+Unsure where to begin contributing? You can start by looking through these beginner and help-wanted issues.
+
