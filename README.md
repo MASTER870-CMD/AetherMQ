@@ -93,3 +93,4 @@ services:
       - ./data:/app/data
 ```
 ### Kubernetes
+For high availability, deploy AetherMQ as a StatefulSet.
