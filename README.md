@@ -1,6 +1,12 @@
 <div align="center">
   <h1>🚀 AetherMQ</h1>
   <p><b>A highly-concurrent, distributed message broker built in TypeScript.</b></p>
+  <br />
+  <p>
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+    <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+  </p>
 </div>
 
 ## 🌟 Overview
