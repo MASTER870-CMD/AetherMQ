@@ -104,3 +104,4 @@ spec:
 ```
 
 ## ⚡ Performance Tuning
+To achieve maximum throughput, ensure your OS is tuned for high network I/O.
