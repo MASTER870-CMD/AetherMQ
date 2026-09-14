@@ -115,3 +115,4 @@ Ensure the `PORT` environment variable matches your client.
 Check write permissions on the `data/` directory.
 
 ## 🛡️ Security
+AetherMQ currently runs over raw TCP. For production, it is recommended to use TLS/mTLS via a reverse proxy like HAProxy or Nginx.
