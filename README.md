@@ -109,3 +109,5 @@ To achieve maximum throughput, ensure your OS is tuned for high network I/O.
 - Increase TCP backlog: `sysctl -w net.core.somaxconn=1024`
 
 ## 🔍 Troubleshooting
+**Q: Connection Refused?**
+Ensure the `PORT` environment variable matches your client.
