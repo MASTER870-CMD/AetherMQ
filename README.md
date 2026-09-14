@@ -81,3 +81,4 @@ docker build -t aethermq .
 ```bash
 docker run -d -p 8080:8080 -v ./data:/app/data aethermq
 ```
+### Docker Compose
