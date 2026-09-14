@@ -32,10 +32,14 @@ Each payload must be a valid JSON object followed by a `\n` character.
 {"type": "SUBSCRIBE", "topic": "events"}
 ```
 
-## ⚙️ Core Features
-* **100% Functional TCP Server:** Handles TCP stream buffering and parses newline-delimited JSON commands.
-* **Crash-Fault Tolerance:** Uses a Write-Ahead Log (`.wal`) for perfect state reconstruction.
-* **Batch-Flushing WAL:** Flushes every 100ms to eliminate Disk I/O bottlenecks.
+## ⚙️ Configuration
+AetherMQ can be customized via environment variables:
+| Variable | Description | Default |
+| -------- | ----------- | ------- |
+| `PORT` | TCP Port to bind the server | `8080` |
+| `WAL_FLUSH_INTERVAL` | WAL flush frequency in ms | `100` |
+| `DATA_DIR` | Directory for persistence files | `./data` |
+| `MAX_CLIENTS` | Max concurrent TCP connections | `10000` |
 
 ## 🚀 How to Test it Locally
 1. **Start the server:**
