@@ -107,3 +107,5 @@ spec:
 To achieve maximum throughput, ensure your OS is tuned for high network I/O.
 - Increase file descriptors: `ulimit -n 65535`
 - Increase TCP backlog: `sysctl -w net.core.somaxconn=1024`
+
+## 🔍 Troubleshooting
